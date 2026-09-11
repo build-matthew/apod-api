@@ -1,13 +1,6 @@
 {
-  "name": "apod",
-  "description": "",
-  "keywords": [
-    "build",
-    "build.io"
-  ],
-  "website": "https://small-sharp-tool.com/",
+  "name": "apod-api",
   "repository": "git@github.com:tetsuya/apod-api.git",
-  "logo": "",
   "success_url": "/",
   "stack": "heroku-24",
   "scripts": {
@@ -21,7 +14,6 @@
       "quantity": 1
     }
   },
-  "image": "deprecated--see formation->type->image",
   "addons": [],
   "buildpacks": [
     {
@@ -31,19 +23,6 @@
       "url": "heroku/procfile"
     }
   ],
-  "hosts": [],
-  "policy": {
-    "allow_websockets": true,
-    "response_timeout": 30,
-    "max_connections": 1024,
-    "temporary_self_signed": true,
-    "share_process_namespace": true,
-    "erosion_resistance_seconds": 0,
-    "waf": false,
-    "tls_passthrough": false,
-    "build_cache": null,
-    "generate_sbom": false
-  },
   "environments": {
     "test": {
       "scripts": {
